@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     box-sizing: border-box;
 }
 
@@ -63,7 +62,21 @@
         }
     }
 }
-=======
+
+.header-lower{
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        list-style-type: none;
+      
+        a{
+            text-decoration: none;
+            color: var(--green-color);
+        }
+    }
 }
 
 
@@ -164,5 +177,3 @@
 }
 
 /* The popular categories section ends here */
-
->>>>>>> cc0953ac15dd9fda5bbcef82900b50cf765628c7

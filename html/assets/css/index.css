@@ -66,6 +66,22 @@
     }
 }
 
+.header-lower{
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        list-style-type: none;
+      
+        a{
+            text-decoration: none;
+            color: var(--green-color);
+        }
+    }
+}
+
 
 /* This section is of popular categories */
 

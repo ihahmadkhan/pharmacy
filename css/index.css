@@ -1,0 +1,288 @@
+/* Basics */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    padding: 30px;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+    line-height: 60px;
+}
+p{
+    font-size: 1rem;
+}
+:root {
+  /* 🔴 Primary Colors */
+  --primary-red: #e60000;
+  --dark-red: #ac0000;
+  --light-red: #ff4d4d;
+
+  /* ⚪ Base Colors */
+  --white: #ffffff;
+  --off-white: #ececec;
+
+  /* ⚫ Text Colors */
+  --text-dark: #333333;
+  --text-light: #666666;
+
+  /* 🟢 Accent (optional - for success/availability) */
+  --accent-green: #28a745;
+
+  /* 🔘 Borders & Shadows */
+  --border-color: #e0e0e0;
+  --shadow-light: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  /* 🌈 Gradient */
+  --gradient-red: linear-gradient(135deg, #ff4d4d, #b30000);
+}
+
+/* Navbar Styling */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--off-white);
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.nav .nav-first{
+    display: flex;
+    gap: 30px;
+    width: 30%;
+    justify-content: flex-start;
+}
+.nav .nav-first a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+.nav .nav-first a:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.nav .nav-second{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    width: 30%;
+    justify-content: center;
+}
+.nav .nav-second .health{
+    font-size: 2rem;
+    color: var(--white);
+    border: 3px solid var(--dark-red);
+    background-color: var(--dark-red);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+
+}
+.nav .nav-second .mart{
+    font-size: 2rem;
+    color: var(--dark-red);
+    border: 3px solid var(--dark-red);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+.nav .nav-second p{
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    color: var(--dark-red);
+    margin-top: 7px;
+}
+
+.nav .nav-third{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 7px;
+}
+.nav .nav-third:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.nav .nav-third .nav-third-first img{
+    width: 30px;
+    border: 2px solid var(--text-dark);
+    border-radius: 10px;
+    padding: 8px;
+}
+.nav .nav-third .nav-third-second{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-dark);
+}
+.nav .nav-third .nav-third-second a{
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+/* Hero Section Styling */
+.hero{
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+.hero .hero-first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    background-color: var(--dark-red);
+    color: var(--white);
+    border-radius: 20px 0 0 20px;
+    padding: 0 50px;
+}
+.hero .hero-first p{
+    font-size: 1rem;
+    margin: 40px 0 50px 0;
+}
+.hero .hero-second{
+    width: 50%;
+    height: 30vw;
+    background-image: url(/images/healthmart.jpg);
+    background-size: cover;
+    border-radius: 0 20px 20px 0;
+}
+
+.hero .hero-first .btns{
+    display: flex;
+    gap: 20px;
+}
+.hero .hero-first .btns{
+    display: flex;
+    gap: 20px;
+}
+.hero .hero-first .btn1 a{
+    text-decoration: none;
+    color: var(--white);
+    background-color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+.hero .hero-first .btn1 a:hover{
+    border-color: white;
+    background-color: transparent;
+    transition-duration: 0.5s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.hero .hero-first .btn2 a{
+    text-decoration: none;
+    color: var(--white);
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+.hero .hero-first .btn2 a:hover{
+    
+    border-color: black;
+    background-color: black;
+    transition-duration: 0.5s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* Cards Section */
+.our-services {
+    font-size: 1.25rem;
+    color: var(--dark-red);
+    margin: 40px 0 10px;
+}
+
+/* Cards container */
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Common card style */
+.cards .card {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/* Hover shadow */
+.cards .card:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: 0.4s ease;
+}
+
+/* Background Image (common) */
+.cards .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 0;
+}
+
+/* Individual images */
+.cards .card1::before { background-image: url(/images/medicine.jpg); }
+.cards .card2::before { background-image: url(/images/cosmetics.jpg); }
+.cards .card3::before { background-image: url(/images/general.jpg); }
+.cards .card4::before { background-image: url(/images/beauty.jpg); }
+
+/* Red overlay */
+.cards .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(230, 0, 0, 0.3);
+    z-index: 0;
+}
+
+/* Text above layers */
+.cards .card * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Image zoom on hover */
+.cards .card:hover::before {
+    transform: scale(1.1);
+}
+
+/* Text styling */
+.cards a {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark-red);
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.cards a:hover {
+    font-size: 2.5rem;
+}

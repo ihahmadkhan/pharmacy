@@ -9,6 +9,7 @@
     --dark-red: #e61414;
     --primary-white: #fff;
     --green-color: green;
+    --dark-text: #333333;
 
 }
 
@@ -196,3 +197,53 @@
 }
 
 /* The popular categories section ends here */
+
+
+/* THIS IS THE START OF FIRST FOOTER SECTION */
+
+.firstfooter{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 90px;
+  padding: 48px;
+  background: rgb(248, 249, 250);
+
+  
+  .list-item{
+    
+
+    .footer-category{
+        border-bottom:3px solid  var(--primary-color);
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+
+        a{
+            text-decoration: none;
+            color: var(--green-color);
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+            letter-spacing: normal;
+        }
+     
+    }
+
+    .category-list{
+
+        ul{
+          
+            list-style-type: none;
+
+           li{
+            margin-bottom: 10px;
+           }
+            a{
+                text-decoration: none;
+                color: var(--dark-text);
+            }
+        }
+    }
+  }
+ 
+}

@@ -347,3 +347,113 @@
 
 
 /* this is end of the second footer */
+
+/* this is start of the medicine page */
+.pageinfo{
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+
+
+.main-section {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  padding: 20px;
+
+}
+
+.filters{
+   width: 20%;
+}
+
+.filters h3{
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+
+.products {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+  }
+    
+.product-card{
+        background: white;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 6px;
+        transition: box-shadow 0.3s;
+    }
+
+.product-card:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width:1050px) {
+  
+.products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width:560px) {
+.filters{
+  display: none;
+}
+.products{
+  grid-template-columns: repeat(1, 1fr);
+  margin: auto;
+}
+}
+
+
+
+.price{
+  color: green;
+}
+
+
+.decrement{
+  padding: 0.2rem 0.8rem;
+}
+
+.increment{
+  padding: 0.2rem 0.8rem;
+}
+
+.totalproduct{
+  padding: 0.2rem 2rem;
+  border: 1px solid black;
+}
+
+.cartQuntity{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.Addtocart{
+  background-color: #a50505;
+  color: #fff;
+  border: 1px solid #a50505;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 600;
+  width: 100%;
+  height: 35px;
+
+}
+
+/* this is end of the medicine page */

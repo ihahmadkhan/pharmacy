@@ -408,6 +408,10 @@
 .products {
     grid-template-columns: repeat(2, 1fr);
   }
+
+ .product-card img {
+  width: 100%;
+}
 }
 @media (max-width:560px) {
 .filters{

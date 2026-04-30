@@ -88,6 +88,13 @@
 
 /* This section is of popular categories */
 
+.popular-categories{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin: 30px 0;
+}
 .popular-categories h1 {
     font-size: 2.1875rem;
     font-weight: 600;
@@ -347,7 +354,12 @@
 /* this is end of the second footer */
 
 /* this is start of the card section */
-
+.card-container{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
 
 .card-first {
     width: 1400px;

@@ -21,4 +21,18 @@ const slider = document.querySelector('.slider');
                 current = 0;
             }, 500); // wait for smooth scroll to finish, then reset
         }
-    }, 2000);
+    }, 5000);
+
+    // code for animation
+    const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    }
+  });
+}, { threshold: 0.1 }); // Trigger when 10% of the div is visible
+
+// Tell the observer to watch all elements with the 'reveal' class
+const targetElements = document.querySelectorAll('.reveal');
+targetElements.forEach((el) => observer.observe(el));
+// code for animation ends here

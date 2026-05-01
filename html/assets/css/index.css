@@ -31,10 +31,9 @@
 
             h1 {
                 font-size: 48px;
-                color: var(--primary-white)
+                color: var(--primary-white);
             }
 
-            ;
         }
 
         .search {
